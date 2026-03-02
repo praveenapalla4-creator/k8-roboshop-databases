@@ -64,7 +64,9 @@ spec:
       containers:
       - name: mysql
         image: pallapraveena/mysql:v1
-       
+        env:
+      - name: MYSQL_ROOT_PASSWORD
+        value: "RoboShop@1"    # root password
         volumeMounts:
         - name: mysql
           mountPath: /data/db 
