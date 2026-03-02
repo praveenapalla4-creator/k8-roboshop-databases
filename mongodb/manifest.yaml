@@ -40,8 +40,8 @@ spec:
   selector:
     matchLabels:
       project: roboshop
-    component: mongodb
-    tier: db
+      component: mongodb
+      tier: db
   serviceName: "mongodb-headless" # this should be head less service name
   replicas: 2 # by default is 1
   template:
@@ -54,7 +54,6 @@ spec:
       containers:
       - name: mongodb
         image: pallapraveena/mongodb:v1
-       
         volumeMounts:
         - name: mongodb
           mountPath: /data/db 
