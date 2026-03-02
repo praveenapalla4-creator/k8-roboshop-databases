@@ -69,7 +69,7 @@ spec:
              value: "RoboShop@1"    # root password
         volumeMounts:
         - name: mysql
-          mountPath: /var/lib/mysql
+          mountPath: /data/db 
         - name: mysql-config
           mountPath: /etc/mysql/conf.d/my.cnf
           subPath: my.cnf
