@@ -38,11 +38,10 @@ metadata:
   namespace: roboshop
 spec:
   selector:
-
     matchLabels:
       project: roboshop
-    component: redis
-    tier: db
+      component: redis
+      tier: db
   serviceName: "redis-headless" # this should be head less service name
   replicas: 2 # by default is 1
   template:
