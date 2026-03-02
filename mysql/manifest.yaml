@@ -47,9 +47,8 @@ metadata:
   name: mysql-headless
   namespace: roboshop
 spec:
-  clusterIp: None
   selector:
-     
+    matchLabels:
       project: roboshop
       component: mysql
       tier: db
