@@ -67,7 +67,7 @@ spec:
   # This is PVC
   volumeClaimTemplates:
   - metadata:
-      name: wredisw
+      name: rabbitmq
     spec:
       accessModes: [ "ReadWriteOnce" ]
       storageClassName: "roboshop-ebs"
