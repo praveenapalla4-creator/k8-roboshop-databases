@@ -54,14 +54,13 @@ spec:
       containers:
       - name: redis
         image: redis:7.0
-       
         volumeMounts:
         - name: redis
           mountPath: /data
   # This is PVC
   volumeClaimTemplates:
   - metadata:
-      name: wredisw
+      name: redis
     spec:
       accessModes: [ "ReadWriteOnce" ]
       storageClassName: "roboshop-ebs"
