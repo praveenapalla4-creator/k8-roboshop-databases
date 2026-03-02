@@ -38,7 +38,6 @@ metadata:
   namespace: roboshop
 spec:
   selector:
-
     matchLabels:
       project: roboshop
     component: mongodb
